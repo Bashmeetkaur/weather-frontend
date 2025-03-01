@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px; /* Increased padding for better left and right spacing */
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(12, 11, 11, 0.751);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -28,8 +28,7 @@
 }
 
 .nav-links a {
-    /* color: #fff; */
-    color: black;
+    color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease-in-out;

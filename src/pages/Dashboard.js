@@ -29,6 +29,9 @@ function Dashboard() {
             const storedName = localStorage.getItem('userName');
             if (storedName) {
                 setUserName(storedName);
+            } else {
+                alert("Please log in to see weather details.");
+                navigate('/login'); // Redirect after alert
             }
         }
     }, [location, navigate]);
@@ -78,25 +81,6 @@ function Dashboard() {
         e.preventDefault();
         fetchWeatherData();
     };
-
-    if (!userName) {
-        return (
-            <div style={{ textAlign: 'center', marginTop: '20px' }}>
-                <h2>Please log in to see weather details.</h2>
-                <button onClick={() => navigate('/login')} style={{
-                    padding: '10px 20px',
-                    fontSize: '16px',
-                    backgroundColor: '#007bff',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '8px',
-                    cursor: 'pointer'
-                }}>
-                    Go to Login
-                </button>
-            </div>
-        );
-    }
 
     return (
         <div className="dashboard">

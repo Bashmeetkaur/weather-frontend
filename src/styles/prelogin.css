@@ -24,7 +24,6 @@ h1 span {
     background: linear-gradient(135deg, #ff9800, #ff5722);
     -webkit-background-clip: text;
     background-clip: text;
-    background-clip: text;
     color: transparent;
 }
 
