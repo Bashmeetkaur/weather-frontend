@@ -1,36 +1,10 @@
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import VideoBackground from './components/VideoBackground';
-// import PreLogin from './pages/PreLogin';
-// import Login from './pages/Login';
-// import Dashboard from './pages/Dashboard';
-// import AdminPanel from './pages/AdminPanel';
-
-// function App() {
-//     return (
-//         <>
-//             <VideoBackground />
-//             <BrowserRouter>
-//                 <Routes>
-//                     <Route path="/" element={<PreLogin />} />
-//                     <Route path="/login" element={<Login />} />
-//                     <Route path="/dashboard" element={<Dashboard />} />
-//                     <Route path="/admin" element={<AdminPanel />} />
-//                 </Routes>
-//             </BrowserRouter>
-//         </>
-//     );
-// }
-
-// export default App;
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import VideoBackground from './components/VideoBackground';
 import Layout from './components/Layout';
 import PreLogin from './pages/PreLogin';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
-// import AdminPanel from './pages/AdminPanel';
-// import CitySearch from './pages/CitySearch';
+import AdminPanel from './pages/AdminPanel';
 
 function App() {
     return (
@@ -65,6 +39,8 @@ function App() {
                                 <Dashboard />
                             </>
                         } />
+<Route path="/admin" element={<AdminPanel />} />
+
                 </Routes>
             </Layout>
         </BrowserRouter>

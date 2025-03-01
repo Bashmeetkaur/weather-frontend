@@ -84,7 +84,8 @@ function Dashboard() {
 
     return (
         <div className="dashboard">
-            <h1>Welcome, {userName}! Weather & AQI Dashboard</h1>
+            <h1 className='user-style'>Welcome, {userName}!  <br/>Weather & AQI Dashboard</h1>
+            <h4 className='text-afteruser'>Find Weather & AQI by Entering a City Name</h4>
             <form onSubmit={handleSearch}>
                 <input
                     type="text"

@@ -17,6 +17,8 @@ const Navbar = () => {
         window.location.href = '/';
     };
 
+
+
     return (
         <nav className="navbar">
             <div className="logo">
@@ -42,38 +44,3 @@ const Navbar = () => {
 export default Navbar;
 
 
-
-// import { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
-
-// const Navbar = () => {
-//     const [userName, setUserName] = useState('');
-
-//     useEffect(() => {
-//         const storedName = localStorage.getItem('userName');
-//         if (storedName) {
-//             setUserName(storedName);
-//         }
-//     }, []);
-
-//     const handleLogout = () => {
-//         localStorage.removeItem('userName');
-//         window.location.href = '/';
-//     };
-
-//     return (
-//         <nav>
-//             <Link to="/">Home</Link>
-//             <Link to="/dashboard">Dashboard</Link>
-//             {userName ? (
-//                 <span>
-//                     Hello, {userName}! <button onClick={handleLogout}>Logout</button>
-//                 </span>
-//             ) : (
-//                 <Link to="/login">Login</Link>
-//             )}
-//         </nav>
-//     );
-// };
-
-// export default Navbar;

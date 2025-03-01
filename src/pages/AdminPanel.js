@@ -1,5 +1,10 @@
-function AdminPanel() {
-    return <h2>Admin Panel</h2>;
-}
+const AdminPanel = () => {
+    return (
+        <div>
+            <h1>Admin Panel</h1>
+            <p>Manage users here!</p>
+        </div>
+    );
+};
 
 export default AdminPanel;

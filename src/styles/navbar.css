@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px; /* Increased padding for better left and right spacing */
+    padding: 5px 30px; /* Increased padding for better left and right spacing */
     background: rgba(12, 11, 11, 0.751);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -36,4 +36,23 @@
 
 .nav-links a:hover {
     color: #ff9800;
+}
+
+.username {
+    color: #fff;
+    text-shadow: #ff9800 2px 2px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.logout-btn {
+    margin: 0px 8px; /* Optional: Extra space on the right if needed */
+    padding: 5px 20px;
+    background: #ff9800;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
 }

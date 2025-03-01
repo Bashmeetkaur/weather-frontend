@@ -10,10 +10,12 @@ function Login() {
             <div className="login-card">
                 <h1>Welcome to Weather Dashboard</h1>
                 <p>Get real-time weather and AQI updates with a single click!</p>
+                <p>Log in to explore real-time weather updates and air quality insights at your fingertips.</p>
                 <button className="google-login-btn" onClick={handleGoogleLogin}>
                     Login with Google
                 </button>
             </div>
+
         </div>
     );
 }
