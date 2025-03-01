@@ -1,0 +1,142 @@
+/* General Styles */
+.prelogin-container {
+    position: relative;
+    min-height: 100vh;
+    /* color: white; */
+    text-align: center;
+}
+
+/* .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+} */
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+h1 span {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    /* color: #fff; */
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 87, 34, 0.8);
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 87, 34, 0.5);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ff9800;
+}
+
+/* Glassmorphism Section */
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 50px 20px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+/* Why Choose Us Section */
+.why-choose {
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(1px); /* Frosted glass effect */
+    border-radius: 20px;
+    padding: 10px 10px;
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.why-choose:hover {
+    transform: scale(1.02); /* Slight scale on hover */
+    box-shadow: 0 12px 35px rgba(255, 87, 34, 0.5); /* Glow effect */
+}
+
+.why-choose h5 {
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #ff9800, #ff5722); /* Gradient text */
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.why-choose p {
+    font-size: 1rem;
+    margin: 0 auto;
+}
